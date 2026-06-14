@@ -3,7 +3,7 @@ package com.example.aiaggregator.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.aiaggregator.data.ApiKeyManager
+import com.example.aiaggregator.data.api.ApiKeyManager
 import com.example.aiaggregator.data.api.AIApiService
 import com.example.aiaggregator.data.model.AIProvider
 import com.example.aiaggregator.data.model.ChatMessage
