@@ -285,6 +285,7 @@ private fun getModeEmoji(mode: JudgmentMode): String = when (mode) {
     JudgmentMode.HYBRID -> "⚖️"
     JudgmentMode.MANUAL -> "👤"
     JudgmentMode.BLIND -> "🎭"
+    else -> "❓"
 }
 
 private fun getModeName(mode: JudgmentMode): String = when (mode) {
@@ -292,4 +293,5 @@ private fun getModeName(mode: JudgmentMode): String = when (mode) {
     JudgmentMode.HYBRID -> "Гибрид"
     JudgmentMode.MANUAL -> "Ручной"
     JudgmentMode.BLIND -> "Blind"
+    else -> "Unknown"
 }
