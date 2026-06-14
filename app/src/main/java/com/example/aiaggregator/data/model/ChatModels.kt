@@ -24,9 +24,14 @@ data class KimiVerdict(
 )
 
 object ProviderDefaults {
-    val providers = listOf(
+    val KIMI = AIProvider(id = "kimi", name = "Kimi", baseUrl = "https://api.moonshot.cn/v1", modelName = "moonshot-v1-8k")
+    
+    val ALL_PROVIDERS = listOf(
         AIProvider(id = "openai", name = "OpenAI", baseUrl = "https://api.openai.com/v1", modelName = "gpt-4"),
         AIProvider(id = "anthropic", name = "Anthropic", baseUrl = "https://api.anthropic.com", modelName = "claude-3"),
-        AIProvider(id = "gemini", name = "Gemini", baseUrl = "https://generativelanguage.googleapis.com", modelName = "gemini-pro")
+        AIProvider(id = "gemini", name = "Gemini", baseUrl = "https://generativelanguage.googleapis.com", modelName = "gemini-pro"),
+        KIMI
     )
+    
+    val providers = ALL_PROVIDERS
 }
